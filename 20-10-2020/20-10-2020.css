@@ -12,6 +12,7 @@ html, body {
 nav {
     background-color:#D5D8DC;
     margin: 0px;
+    padding: 0px 20px;
 }
 
 .navbar {
@@ -62,18 +63,23 @@ nav {
 
 header {
     text-align: center;
-    position: relative;
+    position: relatie;
+    background: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&h=1000&q=80)
+                no-repeat center;
+    background-size: cover;
+    height: 100vh;
 }
 
 .head-img {
     width: 100%;
     height: auto;
-
 }
 
 .head-textOnImg {
-    position: absolute ;
- 
 }
 
 header h1 {
@@ -82,8 +88,32 @@ header h1 {
     animation-fill-mode: forwards;
     font-weight: 10;
     color: white;
-    top: 10%;
-    left: 20%;
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width: 992px) {
+    header h1 {
+        font-size: 100px; 
+    }
+
+    header p {
+        font-size: 30px;
+    }
+
+    header {
+        height: 75vh;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    header h1 {
+        font-size: 60px; 
+    }
+
+    header {
+        height: 50vh;
+    }
 }
 
 @keyframes textHead {
@@ -103,8 +133,6 @@ header p {
     font-size: 60px;
     color: white;
     opacity: 0;
-    top: 50%;
-    left: 40%;
 }
 
 @keyframes textPHead {
