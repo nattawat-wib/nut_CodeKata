@@ -1,0 +1,143 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav {
+    background-color: #F9E79F;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    color:  #85C1E9;
+    padding: 0px 20px;
+}
+
+.navbar__logo {
+    cursor: pointer;
+}
+
+.navbar__menu li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px ;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar__menu--dropdown:hover li {
+    display: block;
+    width: 100px;
+    height: auto;
+    margin: 20px;
+    color: tomato;
+}
+
+.navbar__menu--dropdown li {
+    display: none ;
+    position: absolute;
+
+}
+
+header {
+    background: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+        url(https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80)
+        no-repeat center;
+    background-size: cover;
+    height: 80vh;
+    position: relative;
+}
+
+.header__text {
+    color: #fff;
+    text-align: center;
+    font-size: 170px;
+    margin:100px;
+    top: 50%;
+    animation: header__text 1s ease forwards;
+}
+
+@keyframes header__text {
+    0% {
+        transform: translate(0px, 60px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+.header__text--small {
+    text-align: center;
+    color: #fff;
+    font-size: 60px;
+    animation: header__text--small 1s ease .2s forwards;
+    opacity: 0;
+}
+
+@keyframes header__text--small {
+    0% {
+        transform: translate(0px, 60px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+.header__button {
+    font-size: 25px;
+    border-radius: 7px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px;
+    display: block;
+    margin: auto;
+    outline: none;
+    transition: .3s ease;
+}
+
+.header__button:hover {
+    background-color: white;
+    color: #000;
+}
+
+.About__headText {
+    text-align: center;
+    font-size: 40px;
+    margin: 500px;
+}
+
+.aa {
+    scroll-behavior: smooth;
+}
+
+.btt {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
