@@ -1,0 +1,167 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.topbar {
+    background-color:#292B2C ;
+}
+
+.topbar-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    color: #fff;
+    font-size: 14px;
+}
+
+.topbar-container h1 {
+    font-size: 14px;
+}
+
+.topbar__contact {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.topbar__contact h1 {
+    margin-right: 25px;
+    transition: .3s ease;
+}
+
+.topbar__contact h1:hover {
+    color: #FEBC34;
+}
+
+
+.topbar__icon {
+    display: flex;
+   
+}
+
+.topbar__icon p {
+    margin-right: 25px;
+    transition: .3s ease;
+}
+    
+.topbar__icon p:hover {
+    color: #FEBC34;
+    cursor: pointer;
+}
+
+nav {
+    background-color: #F5F5F5;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__logo i {
+    color: #FEBC34;
+}
+
+.navbar__menu li {
+    display: inline-block ;
+    list-style: none ;
+    margin-right: 20px;
+    transition: .3s ease;
+    font-size: 15px;
+}
+
+.navbar__menu li:hover {
+    color: #FEBC34;
+    cursor: pointer;
+}
+
+header {
+    background: linear-gradient(
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+                ),
+                url(https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)
+                no-repeat center;
+    background-size: cover;
+    height: 70vh;
+}
+
+header{
+    display: flex;
+}
+
+.header__textbox {
+    max-width: 600px;
+    margin: auto;
+}
+
+.header__textbox--text-big {
+    text-align: center;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 5rem;
+    margin: 0px auto 5px auto;
+}
+
+.header__textbox--text-small {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    line-height: 2rem;
+}
+
+.header__button-box {
+    display: flex;
+    justify-content: center;
+}
+
+.header__button-box button {
+    padding: 20px;
+    margin: 30px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+}
+
+.button-box__start {
+    background-color: #FEBC34;
+    color: white;
+    transition: .3s ease;
+}
+
+.button-box__start:hover {
+    background-color: #FEAD0B;
+    cursor: pointer;
+}
+
+.button-box__learn {
+    background-color: #F5F5F5;
+    color: #000;
+    transition: .3s ease;
+}
+
+.button-box__learn:hover {
+    background-color: #F5F5F5 ;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+
+
+
+
+
