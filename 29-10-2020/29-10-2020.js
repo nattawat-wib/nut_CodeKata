@@ -12,7 +12,6 @@ window.onscroll = function() {
         navMenuList.forEach((x) => x.style.color = '#ECF0F1' )
         navBar.forEach((x) => x.style.backgroundColor = 'transparent')
         
-
     } else {
         navLogo.style.color = '#34495E';
         nav.style.backgroundColor = '#ECF0F1 ';
