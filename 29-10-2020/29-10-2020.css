@@ -1,0 +1,131 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    background: linear-gradient(
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+                ),
+                url(https://images.unsplash.com/photo-1555617981-dac3880eac6e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)
+                no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+
+nav { 
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    transition: .5s ease;
+}
+
+.nav {
+    padding: 20px 40px;
+    background-color: transparent;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    transition: .5s ease;
+}
+
+.nav__logo {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    color: #ECF0F1 ;
+    transition: .5s ease;
+}
+
+.nav__logo:hover {
+    color: #F1C40F ;
+    cursor: pointer;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 3rem;
+    width: 120px;
+    padding: 10px 10px;
+    text-align: center;
+    border-radius: 10px;
+    transition: .5s ease;
+    position: relative;
+}
+
+nav ul li:hover {
+    background-color: #F1C40F ;
+}
+
+nav ul li:hover > a {
+    color: #34495E ;
+}
+
+nav ul li:hover > ul {
+    display: block;
+    animation: fade-up-navbar .5s ease;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: #ECF0F1  ;
+    font-weight: bold;
+    transition: .5s ease;
+}
+
+nav ul ul {
+    position: absolute;
+    display: none;
+    top: 68px;
+    left: 0;
+    border-radius: 10px;
+}
+
+nav ul ul li {
+    display: block;
+    border-radius: 10px;
+}
+
+nav ul ul ul {
+    left: 140px;
+    top: 0;
+    
+}
+
+@keyframes fade-up-navbar {
+    0% {
+        opacity: 0;
+        transform: translate(0, 30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+.box {
+    background: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        ),
+        url(https://images.unsplash.com/photo-1555617981-dac3880eac6e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)
+        no-repeat center;
+background-size: cover;
+height: 100vh;
+}

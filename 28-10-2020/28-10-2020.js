@@ -27,7 +27,6 @@ window.onscroll = function () {
         navSubMenu.forEach((value)=> {
             value.style.backgroundColor = 'transparent';
         })
-
     }
 }
 
