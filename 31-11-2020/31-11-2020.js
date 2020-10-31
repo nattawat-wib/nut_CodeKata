@@ -15,6 +15,13 @@ function aniText() {
     }
 }
 
+const spanToggle = document.getElementById('navToggle');
+const navMenu = document.getElementById('navMenu');
+
+spanToggle.addEventListener('click', function(){
+    navMenu.classList.toggle('span-nav');
+});
+
 function run() {
     document.addEventListener('scroll', function() {
         paraText();

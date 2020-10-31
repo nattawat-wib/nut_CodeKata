@@ -7,10 +7,7 @@ html, body {
 
 ::-webkit-scrollbar {
     background-color: #7e8a8b;
-}
-
-::-webkit-scrollbar-track{
-    border: 2px solid #3d3d3d;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -18,7 +15,7 @@ html, body {
     height: 10px;
     width: 5px;
     color: black;
-    border-radius: 1px;
+    border-radius: 10px;
 }
 
 header {
@@ -116,6 +113,7 @@ nav {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+    padding: 0 40px;
 }
 
 #nav__logo {
@@ -152,17 +150,29 @@ nav ul li:hover > ul {
 nav ul li a {
     font-size: 1.5rem;
     text-decoration: none;
-    font-weight: ;
     color: #222222;
 }
 
 nav ul ul {
     position: absolute;
+    width: 200px;
     top: 75px;
     left: 0px;
     display: none;
     background-color: #ffffff;
     border-radius: 5px;
+    animation: nav-fade-up .5s ease forwards;
+}
+
+@keyframes nav-fade-up {
+    0%{
+        opacity: 0;
+        transform: translate(0, 80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0, 0);
+    }
 }
 
 nav ul ul li {
@@ -171,7 +181,53 @@ nav ul ul li {
 
 nav ul ul ul {
     top: 0px;
-    left: 160px;
+    left: 200px;
+}
+
+h2 {
+    display: none;
+    font-size: 2rem;
+    margin: 0;
+    padding: 20px 0;
+}
+
+nav label, nav input{
+    display: none;
+    font-size: 2rem;
+    padding: 20px 0;
+}
+
+@media (max-width:768px) {
+    #navToggle {
+        display: block;
+    }
+    
+    nav input {
+        display: none;
+    }
+
+    nav ul {
+        position: relative;
+        width: 100vw;
+        overflow: hidden;
+        height: 0;
+        transition: 1s ease;
+        opacity: 0;
+    }
+
+    nav ul li {
+    display: block;
+    }
+
+    .nav {
+    flex-flow: row wrap;
+    padding: 0 20px;
+    }
+    
+    #checkk:checked ~ ul{
+        height: 400px;
+        opacity: 1;
+    }
 }
 
 

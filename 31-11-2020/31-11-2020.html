@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href='./31-11-2020.css'>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
 </head>
 
 <body>
@@ -16,14 +18,15 @@
                 <h1 id="nav__logo">
                     Portfolio
                 </h1>
-                <ul>
+                <label for="checkk" id='navToggle'> <i class="fas fa-bars"></i>  </label>
+                <input type="checkbox" id="checkk">
+                <ul id="navMenu">
                     <li><a href="#"> Home </a></li>
-                    <li><a href="#"> Skill </a>
-                        
+                    <li><a href="#"> Skill <i class="fas fa-caret-down"></i> </a>
                         <ul>
                             <li><a href="#"> Software </a></li>
                             <li><a href="#"> Hardware </a></li>
-                            <li><a href="#"> Languages </a>
+                            <li><a href="#"> Languages <span> <i style="transform: rotate(-90deg);" class="fas fa-caret-down"></i> </span> </a> 
                                 <ul>
                                     <li><a href=""> Java </a></li>
                                     <li><a href=""> JavaScript </a></li>
