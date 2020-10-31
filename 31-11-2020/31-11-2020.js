@@ -6,7 +6,7 @@ function paraText() {
 }
 
 function aniText() {
-    if(window.scrollY > 500) {
+    if (window.scrollY > 500) {
         textAni.classList.remove('fade-down');
         textAni.classList.add('fade-up');
     } else {
@@ -18,14 +18,31 @@ function aniText() {
 const spanToggle = document.getElementById('navToggle');
 const navMenu = document.getElementById('navMenu');
 
-spanToggle.addEventListener('click', function(){
+spanToggle.addEventListener('click', function () {
     navMenu.classList.toggle('span-nav');
 });
 
+const eye = document.getElementById('eye');
+const bodyEl = document.querySelector('body')
+
+function mouseMove({ pageX, pageY }) {
+  const {left, top} =  eye.getBoundingClientRect();
+
+  const eyeCenterX = left + eye.offsetWidth / 2;
+  const eyeCenterY = top + eye.offsetHeight / 2;
+  const radian = Math.atan2(pageX - eyeCenterX, pageY - eyeCenterY);
+  const angle = radian *180 / Math.PI * -1;
+  eye.style.transform = `translate(${angle}px, ${angle}px)`;
+}
+
+
+
 function run() {
-    document.addEventListener('scroll', function() {
+    document.addEventListener('scroll', function () {
         paraText();
         aniText();
+        bodyEl.addEventListener('mousemove', mouseMove);
+
     });
 }
 run();
