@@ -1,0 +1,56 @@
+:root {
+  --primary-color: #282c34;
+  --secondary-color: #61dafb;
+}
+
+html, body {
+  background-color: var(--primary-color) ;
+  color: var(--secondary-color);
+  font-size: 1.3rem;
+}
+
+.navActive {
+  color: #ffffff;
+  font-weight: bolder;
+}
+
+nav {
+  border-bottom: 5px solid gray;
+}
+
+.navbar {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  transition: .3s ease;
+}
+
+.nav__logo:hover {
+  cursor: pointer;
+  color: #ffffff;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  padding: 10px 25px;
+  transition: .3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffffff;
+}
