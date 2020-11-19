@@ -8,10 +8,10 @@ class Navbar extends Component {
                 <div className="navbar">
                     <h1 className="nav__logo"> React App </h1>
                     <ul>
-                        <li> <NavItems name="Home" /> </li>
-                        <li> <NavItems name="About" /> </li>
-                        <li> <NavItems name="Services" /> </li>
-                        <li> <NavItems name="Contact" /> </li>
+                        <li> <NavItems toLink="/" name="Home" /> </li>
+                        <li> <NavItems toLink="about" name="About" /> </li>
+                        <li> <NavItems toLink="services" name="Services" /> </li>
+                        <li> <NavItems toLink="contact" name="Contact" /> </li>
                     </ul>
                 </div>
             </nav>

@@ -6,7 +6,6 @@
 html, body {
   background-color: var(--primary-color) ;
   color: var(--secondary-color);
-  font-size: 1.3rem;
 }
 
 .navActive {
@@ -49,8 +48,13 @@ nav ul li a {
   color: var(--secondary-color);
   padding: 10px 25px;
   transition: .3s ease;
+  font-weight: bold;
 }
 
 nav ul li a:hover {
   color: #ffffff;
+}
+
+header {
+  text-align: center;
 }
