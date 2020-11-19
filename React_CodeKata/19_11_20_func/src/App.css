@@ -20,8 +20,7 @@ html, body {
 }
 
 .navActive {
-  color: #fff;
-  border-bottom: 7px solid var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 nav {
@@ -56,7 +55,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: var(--secondary-color);
+  color: #fff;
   text-decoration: none;
   padding: 20px;
   transition: .3s ease;
@@ -64,7 +63,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #fff;
+  color: var(--secondary-color);
 }
 
 header {
@@ -80,6 +79,7 @@ header {
 
 .header__text {
   font-size: 60px;
+  margin-top: 120px;
 }
 
 .header__typing {
