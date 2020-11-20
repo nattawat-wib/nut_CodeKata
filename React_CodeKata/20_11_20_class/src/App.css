@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+:root {
+  --primary-color: #282c34;
+  --secondary-color: #61dafb;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  width: 1200px;
+  margin: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button {
+  outline: none;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--primary-color);
+}
+
+.nav {
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
   align-items: center;
+}
+
+.nav__logo {
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 15px;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  color: var(--secondary-color);
+}
+
+.navActive {
+  color: #ffffff;
+}
+
+.nav__button {
+  color: var(--secondary-color);
+  border: solid 2px var(--secondary-color);
+  background-color: var(--primary-color);
+  padding: 10px 15px;
+  border-radius: 2px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.nav__button:hover {
+  color: #ffffff;
+  background-color: var(--secondary-color);
+}
+
+header {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-flow: column wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: auto;
+  padding: 100px 0 ;
 }
 
-.App-link {
-  color: #61dafb;
+.header__typing-text {
+  font-size: 40px;
+  color: #ffffff;
+  margin: 0 0 60px 0 ;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header h1 {
+  color: var(--secondary-color);
+  font-size: 50px;
+  margin-bottom: 10px;
 }
+
